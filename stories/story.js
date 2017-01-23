@@ -1,12 +1,8 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
-import Welcome from './Welcome';
+import { text } from '@kadira/storybook-addon-knobs';
 
-storiesOf('Welcome', module)
-  .add('to Storybook', () => (
-    <Welcome showApp={linkTo('Button')}/>
-  ));
+import Button from './Button';
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -22,7 +18,7 @@ storiesOf('Button', module)
     `,
     () => (
       <div>
-        <Button label="The Button" onClick={action('onClick')}/>
+        <Button onClick={action('clicked')}>Hello Button</Button>
         <br />
         <p>
           Click the "?" mark at top-right to view the info.
@@ -35,7 +31,7 @@ storiesOf('Button', module)
     `
       This is the basic usage with the button with providing a label to show the text.
     `,
-    () => (<Button label="The Button" onClick={action('onClick')}/>),
+    () => (<Button onClick={action('onClick')}>Hello Button</Button>),
     { inline: true },
   )
   .addWithInfo(
@@ -43,7 +39,7 @@ storiesOf('Button', module)
     `
       This is the basic usage with the button with providing a label to show the text.
     `,
-    () => (<Button label="The Button" onClick={action('onClick')}/>),
+    () => (<Button onClick={action('onClick')}>Hello Button</Button>),
     { source: false, inline: true },
   )
   .addWithInfo(
@@ -51,7 +47,7 @@ storiesOf('Button', module)
     `
       This is the basic usage with the button with providing a label to show the text.
     `,
-    () => (<Button label="The Button" onClick={action('onClick')}/>),
+    () => (<Button onClick={action('onClick')}>{text('Label', 'Hello Button')}</Button>),
     { header: false, inline: true },
   )
   .addWithInfo(
@@ -59,7 +55,7 @@ storiesOf('Button', module)
     `
       This is the basic usage with the button with providing a label to show the text.
     `,
-    () => (<Button label="The Button" onClick={action('onClick')}/>),
+    () => (<Button onClick={action('onClick')}>{text('Label', 'Hello Button')}</Button>),
     { propTables: false, inline: true },
   )
   .addWithInfo(
@@ -82,7 +78,7 @@ storiesOf('Button', module)
     `,
     () => (
       <div>
-        <Button label="The Button" onClick={action('onClick')}/>
+        <Button onClick={action('onClick')}>{text('Label', 'Hello Button')}</Button>
         <br />
       </div>
     ),
@@ -107,7 +103,7 @@ storiesOf('Button', module)
     </div>),
     () => (
       <div>
-        <Button label="The Button" onClick={action('onClick')}/>
+        <Button onClick={action('onClick')}>{text('Label', 'Hello Button')}</Button>
         <br />
         <p>
           Click the "?" mark at top-right to view the info.
@@ -132,6 +128,6 @@ storiesOf('Button', module)
             <img src="http://placehold.it/350x150" />
         </p>
     </div>),
-    () => (<Button label="The Button" onClick={action('onClick')}/>),
+    () => (<Button onClick={action('onClick')}>{text('Label', 'Hello Button')}</Button>),
     { inline: true }
   );
