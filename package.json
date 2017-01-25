@@ -28,7 +28,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "@buildit/storybook-addon-blabbr": "0.0.3",
+    "@buildit/storybook-addon-blabbr": "latest",
     "@buildit/storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-addon-knobs": "^1.7.1"
