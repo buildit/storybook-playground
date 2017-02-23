@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@buildit/storybook-addon-blabbr": "latest",
-    "@buildit/storybook-addon-info": "^3.3.0",
+    "@buildit/storybook-addon-info": "latest",
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-addon-knobs": "^1.7.1"
   }
