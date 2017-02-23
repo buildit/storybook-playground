@@ -8,7 +8,7 @@ module.exports = function(config, env) {
 
   // Extend it as you need.
   config.resolve.alias = {
-      'blabbr-config': path.join(path.resolve(__dirname), './')
+      'blabbr-config': path.join(path.resolve(__dirname), './blabbr-config.js')
     }
 
   return config;
