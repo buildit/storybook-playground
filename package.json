@@ -26,9 +26,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
+    "react-dom": "^15.4.2",
+    "//": "For local development, reference the file system e.g. file:///home/username/myrepo",
     "@buildit/storybook-addon-blabbr": "latest",
     "@kadira/react-storybook-addon-info": "^3.4.0",
     "@kadira/storybook": "^2.21.0",
