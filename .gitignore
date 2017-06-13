@@ -1,5 +1,7 @@
 node_modules
 npm-debug.log
-.storybook/blabbr-config.sample.js
-.storybook/blabbr-config.js
-.storybook/head.html
+.idea/
+.DS_Store
+.vscode
+storybook-config.json
+storybook-static

@@ -1,10 +1,10 @@
 {
   "name": "@buildit/storybook-playground",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Playground for storybook plugins etc.",
   "scripts": {
     "start": "npm run storybook",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./.storybook",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -25,11 +25,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
     "@buildit/storybook-addon-blabbr": "latest",
+    "@buildit/storybook-addon-versions": "latest",
     "@kadira/react-storybook-addon-info": "^3.4.0",
     "@kadira/storybook": "^2.21.0",
-    "@kadira/storybook-addon-knobs": "^1.7.1"
+    "@kadira/storybook-addon-knobs": "^1.7.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
