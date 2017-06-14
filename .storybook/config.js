@@ -10,11 +10,6 @@ setAddon(InfoAddon);
 addDecorator(withKnobs);
 addDecorator(withComments);
 addDecorator(withVersions);
-addDecorator((story) => (
-	<div style={{padding: '10px'}}>
-		{story()}
-	</div>
-));
 
 function loadStories() {
   require('../stories/story');
