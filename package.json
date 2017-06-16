@@ -6,7 +6,7 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 6006 -s ./.storybook",
     "build-storybook": "build-storybook",
-    "serve-static": "ws -d static-storybook"
+    "example": "ws -d example"
   },
   "repository": {
     "type": "git",
