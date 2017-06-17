@@ -33,7 +33,7 @@
     "@storybook/addon-actions": "3.1.2",
     "@storybook/addon-knobs": "3.1.2",
     "@storybook/addon-links": "3.1.2",
-    "@storybook/addon-info": "3.1.2",
+    "@storybook/addon-info": "3.1.4",
     "local-web-server": "^1.2.8",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
