@@ -7,26 +7,11 @@ npm i
 npm run example
 ```
 
-At a bare minimum you will need to create a storybook-config.json file in static-storybook and put the following in:
-
-```
-{
-  "storybook": {
-    "versions": {
-      "availableVersions": [
-        "0_0_1",
-        "0_0_2",
-        "0.2.13",
-        "0.3.4"
-      ],
-      "regex": "\/([^\/]+?)\/?$"
-    }
-  }
-}
-```
-
 then open http://localhost:8000.
 
+There is currently a basic config in the example folder. You can copy that into `.storybook` for local builds too. You will have to add a blabbr section if you want to use that plugin.
+
+_Note:_ If you want to navigate to the dev version using the `local dev` you also need to run the local build. Just `npm start` for that in a separate terminal.
 
 ## Developing with Add-ons locally
 
