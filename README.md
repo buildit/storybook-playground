@@ -4,7 +4,7 @@ Playground for storybook plugins etc.
 If you want to run the static builds and browse the versions then:
 ```
 npm i
-npm run serve-static
+npm run example
 ```
 
 At a bare minimum you will need to create a storybook-config.json file in static-storybook and put the following in:
