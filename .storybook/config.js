@@ -1,8 +1,9 @@
 import { configure, setAddon, addDecorator } from '@storybook/react';
-import infoAddon from '@storybook/addon-info';
+import addWithInfo from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
+import chapters from '@storybook/addon-chapters';
 
-setAddon(infoAddon);
+setAddon(addWithInfo);
 
 addDecorator(withKnobs);
 
