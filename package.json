@@ -1,6 +1,6 @@
 {
   "name": "@buildit/storybook-playground",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Playground for storybook plugins etc.",
   "scripts": {
     "start": "npm run storybook",
